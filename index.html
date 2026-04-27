@@ -368,11 +368,7 @@
             </section>
         );
 
-        const Portfolio = ({ onSelectProject }) => {
-            const [filter, setFilter] = useState('All');
-            const filteredProjects = PROJECTS.filter(p => filter === 'All' || p.category === filter);
-
-            return (
+    
                 <section id="work" className="py-24 bg-slate-950">
                     <div className="max-w-7xl mx-auto px-6">
                         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
