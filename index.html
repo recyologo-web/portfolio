@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ron Erroll | UI/UX and Graphic Design Portfolio</title>
+    <title>Ron Erroll | UI/UX Portfolio</title>
     
     <!-- Scripts for React, Babel, Tailwind, Lucide, and Framer Motion -->
     <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
@@ -368,7 +368,11 @@
             </section>
         );
 
-    
+        const Portfolio = ({ onSelectProject }) => {
+            const [filter, setFilter] = useState('All');
+            const filteredProjects = PROJECTS.filter(p => filter === 'All' || p.category === filter);
+
+            return (
                 <section id="work" className="py-24 bg-slate-950">
                     <div className="max-w-7xl mx-auto px-6">
                         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
@@ -376,7 +380,7 @@
                                 <h2 className="text-4xl font-extrabold text-white mb-4">Featured Work</h2>
                                 <p className="text-slate-400 max-w-md font-light">Crafting solutions where logic meets visual storytelling.</p>
                             </div>
-                            
+                           
                         </div>
 
                         <motion.div layout className="grid md:grid-cols-2 gap-10">
