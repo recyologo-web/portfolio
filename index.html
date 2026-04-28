@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ron Erroll | UI/UX and Graphic Design Portfolio</title>
+    <title>Ron Erroll | UI/UX Portfolio</title>
     
     <!-- Scripts for React, Babel, Tailwind, Lucide, and Framer Motion -->
     <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
@@ -43,6 +43,21 @@
         .animate-marquee:hover {
             animation-play-state: paused;
         }
+
+        /* Custom Scrollbar for Modal */
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #020617;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 10px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #334155;
+        }
     </style>
 </head>
 <body class="selection-indigo">
@@ -65,20 +80,27 @@
                 caseStudy: {
                     challenge: "The legacy ERP system version 3 was reaching end-of-life, desktop-only, and caused significant delays in field reporting. Workers needed precision data management on the go.",
                     solution: "Developed a mobile-first design language prioritizing high-frequency tasks. Used a card-based layout and optimized data entry fields to simplify complex data sets.",
-                    results: "40% faster reporting speed, 95% user satisfaction rate, and a significant reduction in required training time for new version onboarding."
+                    results: "40% faster reporting speed, 95% user satisfaction rate, and a significant reduction in required training time for new version onboarding.",
+                    gallery: [
+                        "https://drive.google.com/thumbnail?id=1kKjkLAJ_6GEiC7vN3ePErAjFaHUW82g4&sz=w1200"
+                    ]
                 }
             },
             {
                 id: 2,
                 title: "Nectar Shopping App",
                 category: "Mobile App",
-                image: "https://drive.google.com/thumbnail?id=1iFnCqFm5S7fkXgJcQmiMPB_9sdpvh0dx&sz=w1200", // Updated to your uploaded high-fidelity image
+                image: "https://drive.google.com/thumbnail?id=1iFnCqFm5S7fkXgJcQmiMPB_9sdpvh0dx&sz=w1200",
                 description: "Frictionless grocery shopping experience for a UK-based startup.",
                 tags: ["Branding", "Accessibility", "Mobile UI"],
                 caseStudy: {
                     challenge: "In a crowded market, Nectar needed to prioritize accessibility for elderly users who found traditional grocery apps visually cluttered and complex.",
                     solution: "Implemented high-contrast visuals, larger touch targets, and a simplified 'one-tap' checkout process. Integrated simplified navigation patterns.",
-                    results: "Increased retention rates by 25% and successfully carved a niche in the accessible grocery delivery segment."
+                    results: "Increased retention rates by 25% and successfully carved a niche in the accessible grocery delivery segment.",
+                    gallery: [
+                        "Multiple screens.jpg",
+                        "https://images.unsplash.com/photo-1512428559083-a4979b2091a0?auto=format&fit=crop&q=80&w=800"
+                    ]
                 }
             },
             {
@@ -91,7 +113,11 @@
                 caseStudy: {
                     challenge: "The existing website was non-responsive and didn't reflect the high-tech innovative nature of the company's energy solutions, leading to low lead generation.",
                     solution: "Created a tech-forward visual overhaul using a dark-mode aesthetic with interactive elements. Built with sub-second performance in mind.",
-                    results: "200% increase in lead inquiries and full compatibility across all mobile and desktop platforms."
+                    results: "200% increase in lead inquiries and full compatibility across all mobile and desktop platforms.",
+                    gallery: [
+                        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800",
+                        "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=800"
+                    ]
                 }
             },
             {
@@ -104,7 +130,10 @@
                 caseStudy: {
                     challenge: "Theo Marvee lacked visual consistency across digital and print mediums, leading to a fragmented luxury perception in the competitive UK market.",
                     solution: "Designed a comprehensive brand guideline including premium image placements, a specific palette, and typography that resonates with high-end cosmetics.",
-                    results: "Unified brand presence across 5 countries and a significant lift in digital campaign engagement."
+                    results: "Unified brand presence across 5 countries and a significant lift in digital campaign engagement.",
+                    gallery: [
+                        "https://drive.google.com/thumbnail?id=1QjBHR_3zcdba-DTf9gLI5WPjAdJv6JhJ&sz=w1200",
+                    ]
                 }
             },
             {
@@ -117,7 +146,7 @@
                 caseStudy: {
                     challenge: "At the peak of NewJeans member Hanni's career in 2024, Marie Claire wanted to feature her as cover artist of their magazine issue.",
                     solution: "I have collaborated in magazine drafting and editorial works despite the smaller discography of the kpop group, the magazine wanted to reach more impact by featuring NewJeans.",
-                    results: "The magazine feature helps the kpop group reach more milestones towards the rest of the year."
+                    results: "The magazine feature helps the kpop group reach more milestones towards the rest of the year.",
                 }
             },
             {
@@ -128,9 +157,31 @@
                 description: "Infographics designer for milkshake company digital marketing strategy.",
                 tags: ["Digital Marketing", "Branding", "Ads"],
                 caseStudy: {
-                    challenge: "The company wanted to reach more mango milkshake lovers with their new digital campaign plan.",
+                    challenge: "The company wanted to reach more mango milkshare lovers with their new digital campaign plan.",
                     solution: "Created eyecatching infographics and social media ads to help them on boosting the ROAS (reach on ads spent).",
-                    results: "Milkshake branding became more popular and gathers more clients and franchisee."
+                    results: "Milkshake branding became more popular and gathers more clients and franchisee.",
+                }
+            },
+            {
+                id: 7,
+                title: "Printed Designs",
+                category: "Marketing, Corporate Giveaways",
+                image: "https://drive.google.com/thumbnail?id=1af5R19jxaEnXjwh7aDV1ojkaiaRsJ-IP&sz=w1800",
+                description: "Freelance and local work printed designs.",
+                tags: ["Marketing", "Corporate Giveaways", "Graphic Designs"],
+                caseStudy: {
+                    challenge: "", // Removed content
+                    solution: "",  // Removed content
+                    results: "",   // Removed content
+                    gallery: [
+                        "https://drive.google.com/thumbnail?id=1Hfj5kyFFxfPhqEdXslm-etzjZ14Wds9s&sz=w600",
+                        "https://drive.google.com/thumbnail?id=1Od1MY-OP9upJltimq9s322yI3pMyl_tX&sz=w800",
+                        "https://drive.google.com/thumbnail?id=1EwkpvDmvWewfYnd_mUGsj0dHt2-OKbPs&sz=w800",
+                        "https://drive.google.com/thumbnail?id=1af5R19jxaEnXjwh7aDV1ojkaiaRsJ-IP&sz=w800",
+                        "https://drive.google.com/thumbnail?id=1SAo6kKcu306EfDmJLo88SgCVPCIAQ4jh&sz=w800",
+                        "https://drive.google.com/thumbnail?id=1QjBHR_3zcdba-DTf9gLI5WPjAdJv6JhJ&sz=w800",
+                        "https://drive.google.com/thumbnail?id=157ujQPhYO4olYp-pIxA0O82xngBCUf2N&sz=w800"
+                    ]
                 }
             }
         ];
@@ -185,7 +236,7 @@
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    className="fixed inset-0 z-[60] bg-slate-950 overflow-y-auto px-6 py-12 md:p-12 lg:p-24"
+                    className="fixed inset-0 z-[60] bg-slate-950 overflow-y-auto px-6 py-12 md:p-12 lg:p-24 custom-scrollbar"
                 >
                     <div className="max-w-5xl mx-auto">
                         <button 
@@ -198,58 +249,117 @@
 
                         <div className="grid lg:grid-cols-2 gap-12 mb-20">
                             <div>
-                                <span className="text-xs font-bold text-indigo-400 uppercase tracking-widest mb-4 block">
+                                <motion.span 
+                                    initial={{ opacity: 0, y: 10 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    className="text-xs font-bold text-indigo-400 uppercase tracking-widest mb-4 block"
+                                >
                                     {project.category} Case Study
-                                </span>
-                                <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+                                </motion.span>
+                                <motion.h1 
+                                    initial={{ opacity: 0, y: 20 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ delay: 0.1 }}
+                                    className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight"
+                                >
                                     {project.title}
-                                </h1>
-                                <p className="text-xl text-slate-400 leading-relaxed mb-8 font-light">
+                                </motion.h1>
+                                <motion.p 
+                                    initial={{ opacity: 0, y: 20 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ delay: 0.2 }}
+                                    className="text-xl text-slate-400 leading-relaxed mb-8 font-light"
+                                >
                                     {project.description}
-                                </p>
-                                <div className="flex flex-wrap gap-2">
+                                </motion.p>
+                                <motion.div 
+                                    initial={{ opacity: 0 }}
+                                    animate={{ opacity: 1 }}
+                                    transition={{ delay: 0.3 }}
+                                    className="flex flex-wrap gap-2"
+                                >
                                     {project.tags.map(tag => (
                                         <span key={tag} className="px-3 py-1 bg-white/5 rounded-full text-xs text-slate-300 font-medium border border-white/10">
                                             {tag}
                                         </span>
                                     ))}
-                                </div>
+                                </motion.div>
                             </div>
-                            <div className="rounded-[2.5rem] overflow-hidden border border-white/10 shadow-2xl relative aspect-square bg-slate-900">
+                            <motion.div 
+                                initial={{ opacity: 0, scale: 0.95 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                transition={{ delay: 0.2 }}
+                                className="rounded-[2.5rem] overflow-hidden border border-white/10 shadow-2xl relative aspect-square bg-slate-900"
+                            >
                                 <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
                                 <div className="absolute inset-0 bg-indigo-500/10 mix-blend-multiply"></div>
-                            </div>
+                            </motion.div>
                         </div>
 
-                        <div className="grid md:grid-cols-3 gap-8 mb-12">
-                            <div className="p-8 bg-slate-900 rounded-[2rem] border border-white/5">
-                                <div className="w-12 h-12 bg-indigo-500/10 rounded-2xl flex items-center justify-center text-indigo-400 mb-6">
-                                    <Icon name="target" size={24} />
+                        {/* DESIGNS STRATEGY SECTION - Hidden for ID 7 */}
+                        {project.id !== 7 && (
+                            <div className="grid md:grid-cols-3 gap-8 mb-24">
+                                <div className="p-8 bg-slate-900 rounded-[2rem] border border-white/5">
+                                    <div className="w-12 h-12 bg-indigo-500/10 rounded-2xl flex items-center justify-center text-indigo-400 mb-6">
+                                        <Icon name="target" size={24} />
+                                    </div>
+                                    <h3 className="text-xl font-bold text-white mb-4">The Challenge</h3>
+                                    <p className="text-slate-400 leading-relaxed text-sm font-light">{project.caseStudy.challenge}</p>
                                 </div>
-                                <h3 className="text-xl font-bold text-white mb-4">The Challenge</h3>
-                                <p className="text-slate-400 leading-relaxed text-sm font-light">{project.caseStudy.challenge}</p>
-                            </div>
-                            <div className="p-8 bg-slate-900 rounded-[2rem] border border-white/5">
-                                <div className="w-12 h-12 bg-purple-500/10 rounded-2xl flex items-center justify-center text-purple-400 mb-6">
-                                    <Icon name="lightbulb" size={24} />
+                                <div className="p-8 bg-slate-900 rounded-[2rem] border border-white/5">
+                                    <div className="w-12 h-12 bg-purple-500/10 rounded-2xl flex items-center justify-center text-purple-400 mb-6">
+                                        <Icon name="lightbulb" size={24} />
+                                    </div>
+                                    <h3 className="text-xl font-bold text-white mb-4">The Solution</h3>
+                                    <p className="text-slate-400 leading-relaxed text-sm font-light">{project.caseStudy.solution}</p>
                                 </div>
-                                <h3 className="text-xl font-bold text-white mb-4">The Solution</h3>
-                                <p className="text-slate-400 leading-relaxed text-sm font-light">{project.caseStudy.solution}</p>
-                            </div>
-                            <div className="p-8 bg-indigo-600 rounded-[2rem] shadow-xl shadow-indigo-600/10">
-                                <div className="w-12 h-12 bg-white/20 rounded-2xl flex items-center justify-center text-white mb-6">
-                                    <Icon name="trophy" size={24} />
+                                <div className="p-8 bg-indigo-600 rounded-[2rem] shadow-xl shadow-indigo-600/10">
+                                    <div className="w-12 h-12 bg-white/20 rounded-2xl flex items-center justify-center text-white mb-6">
+                                        <Icon name="trophy" size={24} />
+                                    </div>
+                                    <h3 className="text-xl font-bold text-white mb-4">Key Results</h3>
+                                    <p className="text-indigo-50 leading-relaxed text-sm font-medium">{project.caseStudy.results}</p>
                                 </div>
-                                <h3 className="text-xl font-bold text-white mb-4">Key Results</h3>
-                                <p className="text-indigo-50 leading-relaxed text-sm font-medium">{project.caseStudy.results}</p>
                             </div>
-                        </div>
+                        )}
+
+                        {/* DESIGNS SHOWCASE SECTION - Only visible for ID 7 */}
+                        {project.id === 7 && (
+                            <div className="mb-24">
+                                <div className="flex items-center gap-3 mb-10">
+                                    <div className="w-12 h-1 px-4 bg-indigo-600 rounded-full"></div>
+                                    <h2 className="text-3xl font-bold text-white tracking-tight">Design Highlights</h2>
+                                </div>
+                                
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                    {project.caseStudy.gallery && project.caseStudy.gallery.map((imgUrl, index) => (
+                                        <motion.div 
+                                            key={index}
+                                            initial={{ opacity: 0, y: 30 }}
+                                            whileInView={{ opacity: 1, y: 0 }}
+                                            viewport={{ once: true }}
+                                            transition={{ delay: index * 0.1 }}
+                                            className={`rounded-3xl overflow-hidden border border-white/5 bg-slate-900 shadow-xl group/showcase ${index % 3 === 0 ? 'md:col-span-2' : ''}`}
+                                        >
+                                            <div className="relative aspect-video md:aspect-auto">
+                                                <img 
+                                                    src={imgUrl} 
+                                                    alt={`Showcase ${index}`} 
+                                                    className="w-full h-full object-cover transition-transform duration-700 group-hover/showcase:scale-105" 
+                                                />
+                                                <div className="absolute inset-0 bg-slate-950/20 group-hover/showcase:bg-transparent transition-colors duration-500"></div>
+                                            </div>
+                                        </motion.div>
+                                    ))}
+                                </div>
+                            </div>
+                        )}
 
                         <div className="mt-20 pt-20 border-t border-white/10 text-center">
-                            <h2 className="text-2xl font-bold text-white mb-6">Ready to collaborate?</h2>
+                            <h2 className="text-2xl font-bold text-white mb-6 tracking-tight">Impressed with the details?</h2>
                             <button 
                                 onClick={onClose}
-                                className="px-10 py-4 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-2xl transition-all shadow-xl shadow-indigo-600/20"
+                                className="px-10 py-4 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-2xl transition-all shadow-xl shadow-indigo-600/20 hover:-translate-y-1"
                             >
                                 Start a Conversation
                             </button>
@@ -330,7 +440,7 @@
                             Architecting <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">Digital Mastery</span>
                         </h1>
                         <p className="text-xl text-slate-400 mb-8 max-w-lg leading-relaxed font-light">
-                            Hi, I’m Ron Erroll! I blend strategy and visual excellence to build accessible digital products. 
+                            Hi, I’m Ron Erroll! I blend strategy and visual excellence to build accessible digital products that drive growth. 
                         </p>
                         <div className="flex flex-wrap gap-4">
                             <a href="#work" className="px-8 py-4 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-2xl transition-all flex items-center gap-2 group shadow-xl shadow-indigo-600/20">
@@ -370,7 +480,7 @@
 
         const Portfolio = ({ onSelectProject }) => {
             const [filter, setFilter] = useState('All');
-            const filteredProjects = PROJECTS.filter(p => filter === 'All' || p.category === filter);
+            const filteredProjects = PROJECTS.filter(p => filter === 'All' || p.category.includes(filter));
 
             return (
                 <section id="work" className="py-24 bg-slate-950">
@@ -380,7 +490,6 @@
                                 <h2 className="text-4xl font-extrabold text-white mb-4">Featured Work</h2>
                                 <p className="text-slate-400 max-w-md font-light">Crafting solutions where logic meets visual storytelling.</p>
                             </div>
-                           
                         </div>
 
                         <motion.div layout className="grid md:grid-cols-2 gap-10">
@@ -406,7 +515,7 @@
                                         
                                         <div className="p-10">
                                             <span className="text-[10px] font-extrabold text-indigo-400 uppercase tracking-[0.2em] mb-3 block">{project.category}</span>
-                                            <h3 className="text-2xl font-extrabold text-white mb-3 group-hover:text-indigo-400 transition-colors">{project.title}</h3>
+                                            <h3 className="text-2xl font-extrabold text-white mb-3 group-hover:text-indigo-400 transition-colors tracking-tight">{project.title}</h3>
                                             <p className="text-slate-400 text-lg mb-8 line-clamp-2 font-light">{project.description}</p>
                                             <div className="flex flex-wrap gap-2">
                                                 {project.tags.map(tag => (
@@ -429,13 +538,13 @@
             <section id="experience" className="py-24 bg-slate-900/50 border-y border-white/5">
                 <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-20">
                     <div>
-                        <h2 className="text-4xl font-extrabold text-white mb-12">Experience</h2>
+                        <h2 className="text-4xl font-extrabold text-white mb-12 tracking-tight">Experience</h2>
                         <div className="space-y-12">
                             {EXPERIENCE.map((exp, idx) => (
                                 <div key={idx} className="relative pl-8 border-l-2 border-indigo-500/20 group">
                                     <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-indigo-500 border-4 border-slate-950 group-hover:scale-150 transition-transform" />
                                     <p className="text-indigo-400 text-xs font-bold uppercase tracking-widest mb-2">{exp.period}</p>
-                                    <h3 className="text-2xl font-bold text-white mb-1">{exp.role}</h3>
+                                    <h3 className="text-2xl font-bold text-white mb-1 tracking-tight">{exp.role}</h3>
                                     <p className="text-slate-400 font-medium mb-3">{exp.company}</p>
                                     <p className="text-slate-500 text-lg leading-relaxed font-light">{exp.desc}</p>
                                 </div>
@@ -444,7 +553,7 @@
                     </div>
                     
                     <div id="skills">
-                        <h2 className="text-4xl font-extrabold text-white mb-12">Toolkit</h2>
+                        <h2 className="text-4xl font-extrabold text-white mb-12 tracking-tight">Toolkit</h2>
                         <div className="space-y-10">
                             {Object.entries(SKILLS).map(([title, skills]) => (
                                 <div key={title}>
@@ -454,7 +563,7 @@
                                     </h3>
                                     <div className="flex flex-wrap gap-3">
                                         {skills.map(skill => (
-                                            <span key={skill} className="px-6 py-3 bg-white/5 border border-white/10 rounded-2xl text-slate-300 text-sm font-bold hover:bg-indigo-500/10 hover:border-indigo-500/30 transition-all">
+                                            <span key={skill} className="px-6 py-3 bg-white/5 border border-white/10 rounded-2xl text-slate-300 text-sm font-bold hover:bg-indigo-500/10 hover:border-indigo-500/30 transition-all cursor-default">
                                                 {skill}
                                             </span>
                                         ))}
